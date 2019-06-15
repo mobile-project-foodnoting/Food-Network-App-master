@@ -1,0 +1,199 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Food_poster"
+        android:layout_width="411dp"
+        android:layout_height="241dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="414dp"
+            android:layout_height="370dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.503"
+            app:srcCompat="@drawable/miy" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/faded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/faded_white" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Food_info"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/res_name"
+            android:layout_width="59dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="315dp"
+            android:layout_marginBottom="372dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/res_name" />
+
+        <ImageView
+            android:id="@+id/res_loca"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="316dp"
+            android:layout_marginBottom="292dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/res_location" />
+
+        <ImageView
+            android:id="@+id/res_checkin"
+            android:layout_width="59dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="316dp"
+            android:layout_marginBottom="142dp"
+            app:layout_constraintBottom_toTopOf="@+id/fab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/res_lastcheckin" />
+
+        <ImageView
+            android:id="@+id/res_price"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="316dp"
+            android:layout_marginBottom="133dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/res_price" />
+
+        <ImageView
+            android:id="@+id/res_hotline"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="315dp"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/res_phone" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="229dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="376dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/res_name" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="56dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fab" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="229dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="136dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/res_price" />
+
+        <EditText
+            android:id="@+id/checkin"
+            android:layout_width="229dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="216dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/res_checkin" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="229dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="296dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/res_loca" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="left|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/res_checkin" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
